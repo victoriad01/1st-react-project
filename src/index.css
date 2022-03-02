@@ -1,13 +1,101 @@
 body {
+  background-color: rgb(251, 129, 190);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  background-color: white;
+  width: 33%;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: 3px 3px 6px gray;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  letter-spacing: 0.1rem;
+  font-weight: 450;
+  line-height: 1.25;
+  font-size: 1.7rem;
+}
+
+.handp {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 25px;
+}
+
+.handp img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.handp h4,
+p {
+  margin-bottom: 0;
+  margin-top: 3px;
+  letter-spacing: 0.1rem;
+}
+
+.card h2 {
+  padding-left: 25px;
+}
+
+p {
+  color: gray;
+}
+.card li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  background-color: rgb(251, 129, 190);
+  color: white;
+  border-color: rgb(251, 129, 190);
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 90%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  letter-spacing: 0.15rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin-top: 70px;
+    padding-top: 20px;
+    width: 90%;
+  }
+
+  .btn {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
